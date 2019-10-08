@@ -1,0 +1,11 @@
+from DataLoader import DataLoader
+from LogisticRegressionClassification import LogisticRegressionClassification
+from NeuralNetworkClassification import NeuralNetClassification
+from RandomForestClassification import RandomForestClassification
+from SupportVectorMachineClassification import SupportVectorMachineClassification
+
+data_loader = DataLoader()
+neural_net = NeuralNetClassification(data_loader)
+logistic_regression = LogisticRegressionClassification(data_loader)
+random_forest = RandomForestClassification(data_loader)
+svm = SupportVectorMachineClassification(data_loader)
